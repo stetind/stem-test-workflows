@@ -11,6 +11,6 @@ on:
 jobs:
   CI:
     if: '! github.event.pull_request.draft'
-    uses: stetind/stem-reusable-workflows/.github/workflows/ci.yaml@dev-automate-release
+    uses: stetind/stem-reusable-workflows/.github/workflows/ci.yaml@feat/gs/automate-release
     secrets:
       COMPOSER_ACCESS_TOKEN: ${{ secrets.COMPOSER_ACCESS_TOKEN }}
