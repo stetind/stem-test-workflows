@@ -1,6 +1,9 @@
 name: PR Labeler
 on:
   workflow_call:
+    secrets:
+      repo_token:
+        required: true
 
 jobs:
   pr-labeler:
