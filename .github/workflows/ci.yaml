@@ -1,18 +1,18 @@
-name: CI
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize, ready_for_review]
-  workflow_dispatch:
-
-jobs:
-  CI:
-    if: '! github.event.pull_request.draft'
-    uses: stetind/stem-reusable-workflows/.github/workflows/ci.yaml@main
-    secrets:
-      COMPOSER_ACCESS_TOKEN: ${{ secrets.COMPOSER_ACCESS_TOKEN }}
-
-      
+#name: CI
+#
+#on:
+#  push:
+#    branches: [main]
+#  pull_request:
+#    branches: [main]
+#    types: [opened, synchronize, ready_for_review]
+#  workflow_dispatch:
+#
+#jobs:
+#  CI:
+#    if: '! github.event.pull_request.draft'
+#    uses: stetind/stem-reusable-workflows/.github/workflows/ci.yaml@main
+#    secrets:
+#      COMPOSER_ACCESS_TOKEN: ${{ secrets.COMPOSER_ACCESS_TOKEN }}
+#
+#
