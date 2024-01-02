@@ -14,5 +14,5 @@ jobs:
       - name: 'Auto-label issue'
         uses: TimonVS/pr-labeler-action@v4
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.repo_token }}
           configuration-path: .github/pr-labeler.yml
