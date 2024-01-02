@@ -1,18 +1,9 @@
 name: PR Labeler
 on:
-  workflow_call:
-    secrets:
-      repo_token:
-        required: true
+  pull_request:
+    types: [opened, closed, reopened]
+  workflow_dispatch:
 
 jobs:
   pr-labeler:
-    permissions:
-      pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Auto-label issue'
-        uses: TimonVS/pr-labeler-action@v4
-        with:
-          repo-token: ${{ secrets.repo_token }}
-          configuration-path: .github/pr-labeler.yml
+    uses: stetind/stem-reusable-workflows/.github/workflows/pr-labeler.yaml@feat/vs/autolabel-prs
