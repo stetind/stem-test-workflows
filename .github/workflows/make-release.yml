@@ -10,4 +10,4 @@ on:
 
 jobs:
   generate-release:
-    uses: stetind/stem-reusable-workflows/.github/workflows/generate-release.yaml@feat/gs/automate-release
+    uses: stetind/stem-reusable-workflows/.github/workflows/generate-release.yaml@main
