@@ -10,5 +10,5 @@ on:
 
 jobs:
   CI:
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }} #I will only run on the main branch and not on pull request
+    if: ${{ github.ref == 'refs/heads/main' }} #I will only run on the main branch and not on pull request
     uses: stetind/stem-reusable-workflows/.github/workflows/make-release.yaml@feat/gs/automate-release
