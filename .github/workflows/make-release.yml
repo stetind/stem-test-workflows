@@ -10,5 +10,4 @@ on:
 
 jobs:
   generate-release:
-   # if: ${{ github.ref == 'refs/heads/main' }} #I will only run on the main branch and not on pull request
-    uses: stetind/stem-reusable-workflows/.github/workflows/make-release.yaml@feat/gs/automate-release
+    uses: stetind/stem-reusable-workflows/.github/workflows/generate-release.yaml@feat/gs/automate-release
