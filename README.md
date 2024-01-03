@@ -4,4 +4,3 @@
 foo
 bark
 
-o
