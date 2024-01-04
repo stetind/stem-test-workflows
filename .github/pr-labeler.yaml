@@ -1,9 +1,0 @@
-- label: 'chore'
-  branch:
-    - '/chore\/.+/'
-- label: 'bug'
-  branch:
-    - '/fix\/.+/'
-- label: 'feature'
-  branch:
-    - '/feat\/.+/'
