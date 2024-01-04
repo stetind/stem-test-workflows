@@ -2,6 +2,8 @@ name: 📖 Generate Release
 
 
 on:
+  pull_request:
+    types: [ converted_to_draft ]
   workflow_run:
     workflows: [CI]
     types:
