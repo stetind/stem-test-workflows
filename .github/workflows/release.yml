@@ -11,4 +11,4 @@ on:
 jobs:
   generate-release:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    uses: stetind/stem-reusable-workflows/.github/workflows/generate-release.yaml@gs/ref/release
+    uses: stetind/stem-reusable-workflows/.github/workflows/generate-release.yaml@main

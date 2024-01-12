@@ -8,4 +8,4 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     steps:
-     -  run: echo 'foo
+     -  run: echo 'foo'
