@@ -2,5 +2,5 @@
 
 
 fooi
-barκ
+bar
 
