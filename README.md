@@ -4,4 +4,3 @@
 fooi
 barκ
 
-j
