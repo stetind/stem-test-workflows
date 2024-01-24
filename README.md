@@ -3,4 +3,3 @@
 
 fool
 barl
-o
