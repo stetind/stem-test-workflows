@@ -13,4 +13,4 @@ jobs:
       - name: Auto-label issue
         uses: actions/labeler@v5
         with:
-          configuration-path: stetind/stem-reusable-workflows/.github/pr-labeler.yml@feat/vs/autolabel-prs
+          configuration-path: stetind/stem-reusable-workflows/.github/labeler.yml@feat/vs/autolabel-prs
