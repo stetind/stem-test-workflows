@@ -1,8 +1,16 @@
-name: PR Labeler
+name: Pull Request Labeler
 on:
   pull_request:
     types: [opened, closed, reopened]
 
 jobs:
-  pr-labeler:
-    uses: stetind/stem-reusable-workflows/.github/workflows/pr-labeler.yaml@feat/vs/autolabel-prs
+  labeler:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto-label issue
+        uses: actions/labeler@v5
+        with:
+          configuration-path: stetind/stem-reusable-workflows/.github/labeler.yml@feat/vs/autolabel-prs
